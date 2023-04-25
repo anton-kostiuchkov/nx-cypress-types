@@ -11,3 +11,4 @@ Demo repo for types not being checked in cypress files
    ✔ Enable distributed caching to make your CI faster · No
 2. npx nx g @nrwl/react:lib common-ui
 3. npx nx g @nrwl/react:cypress-component-configuration --project=common-ui --build-target=store:build:development
+4. npx nx component-test common-ui
