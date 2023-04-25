@@ -9,4 +9,5 @@ Demo repo for types not being checked in cypress files
    ✔ Bundler to be used to build the application · webpack
    ✔ Default stylesheet format             · css
    ✔ Enable distributed caching to make your CI faster · No
-2. 
+2. npx nx g @nrwl/react:lib common-ui
+3. npx nx g @nrwl/react:cypress-component-configuration --project=common-ui --build-target=store:build:development

@@ -7,9 +7,22 @@
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/common-ui/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/common-ui/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "component-test": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/common-ui/cypress.config.ts",
+        "testingType": "component",
+        "devServerTarget": "store:build:development",
+        "skipServe": true
       }
     }
   }
